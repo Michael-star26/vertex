@@ -23,7 +23,7 @@ import {TuiBadge, TuiFade} from '@taiga-ui/kit'
   styleUrl: './projects.component.less'
 })
 export class ProjectsComponent {
-  projects:any=[
+  project:any=[
     {
       name:"outube App",
       Stack:"Anglar",

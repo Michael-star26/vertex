@@ -6,11 +6,14 @@ import { TuiAppearance, TuiButton, TuiDataList, TuiIcon, TuiLink, TuiScrollable,
 import { FooterComponent } from '../footer/footer.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
+import { TuiAvatar } from '@taiga-ui/kit';
 
 @Component({
   selector: 'app-desktopui',
   standalone: true,
   imports: [
+    TuiCell,
+    TuiAvatar,
     TuiNavigation,
     TuiSidebar,
     TuiActiveZone,
