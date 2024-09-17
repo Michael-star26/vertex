@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<div 
+*ngFor="let project of projects"
+tuiCardLarge
+tuiSurface="elevated"
+class="d-flex"
+tuiHeader
+> 
+    <header tuiHeader>
+        name :{{project.name}}
+    </header>
+    <footer>
+       stack : {{project.stack}}
+       url : {{project.url}}
+        photo : {{project.photo}}
+        description: {{project.desc}}
+    </footer>
+</div>

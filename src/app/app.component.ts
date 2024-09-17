@@ -1,3 +1,4 @@
+import { TuiRoot } from "@taiga-ui/core";
 import { Component } from '@angular/core';
 import { DesktopuiComponent } from './desktopui/desktopui.component';
 
@@ -6,8 +7,9 @@ import { DesktopuiComponent } from './desktopui/desktopui.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    DesktopuiComponent
-  ],
+      DesktopuiComponent,
+      TuiRoot,
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less'
 })

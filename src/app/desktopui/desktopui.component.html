@@ -1,1 +1,80 @@
-<app-footer></app-footer>
+<header tuiNavigationHeader>
+    <button 
+    tuiIconButton 
+    tuiNavigationDrawer
+    iconStart="@tui.heart"
+    [(open)]="open"
+    >
+
+    <br>
+    <label class="d-flex m-2">
+        <button tuiButton iconStart="@tui.heart">
+            <div tuiTitle>
+                <strong>Like</strong>
+            </div>
+        </button>   
+    </label>
+    <label class="d-flex m-2">
+        <button tuiButton iconStart="@tui.heart">
+            <div tuiTitle>
+                <strong>Like</strong>
+            </div>
+        </button>   
+    </label>
+    <label class="d-flex m-2">
+        <button tuiButton iconStart="@tui.heart">
+            <div tuiTitle>
+                <strong>Like</strong>
+            </div>
+        </button>   
+    </label>
+    </button>
+    <span tuiNavigationLogo>
+        <button tuiIconButton iconStart="@tui.home" ></button>
+        <span tuiFade>Vertex</span>
+    </span>
+    <hr>
+    <button tuiIconButton iconStart="@tui.users"></button>
+</header>
+<main tuiNavigationMain>
+    <div 
+    tuiCardLarge
+    tuiSurface="elevated"
+    tuiHeader
+    >
+        <header tuiHeader>
+            <span tuiTitle>
+                Hello, My name is Michael
+            </span>
+            <span tuiSubtitle>
+                Welcome to vertex, we have all the solution to your software problems.
+                We offer a range of services such as
+            </span>
+        </header>
+        <div tuiCell="l">
+            <div tuiTitle>
+                Our serveces
+                <div tuiSubtitle>
+                    Web
+                </div>
+            </div>
+        </div>
+    </div>
+    <div 
+    tuiCardLarge
+    tuiSurface="flat"
+    >
+        <p tuiTitle>
+            At Vertex, we blend various technologies to bring you exceptional software solutions.
+            <span tuiFade tuiScrollable>
+                We are commited to creating solutions that lead to success as your loyal partner
+            </span>
+        </p>
+    </div>
+    <h2 tuiTitle>Our Notable projects</h2>
+    <app-projects></app-projects>
+    <h2 tuiTitle>Happy Clients</h2>
+    <app-testimonials></app-testimonials>
+</main>
+<!-- <app-footer></app-footer> -->
+
