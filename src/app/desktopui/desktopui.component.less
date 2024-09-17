@@ -1,3 +1,27 @@
 label{
     margin: auto;
 }
+.wrapper {
+    display: grid;
+    place-items: center;
+  }
+  
+  .type {
+    width: 25rem;
+    animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    30% {
+      border-color: transparent
+    }
+  }
+  
