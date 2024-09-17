@@ -13,3 +13,16 @@
     width: fit-content;
     margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .image {
+        background: url('/images/shop.png') no-repeat top right / 250% ;
+        background-size: cover;
+        height: 14rem;
+        width: 15rem;
+        border-radius: 15px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+  }
