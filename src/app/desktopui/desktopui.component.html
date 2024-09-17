@@ -1,6 +1,7 @@
-<header tuiNavigationHeader>
+<header tuiNavigationHeader >
     <button 
     tuiIconButton 
+    appearance="accent"
     tuiNavigationDrawer
     iconStart="@tui.heart"
     [(open)]="open"
@@ -8,23 +9,44 @@
 
     <br>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart">
+        <button tuiButton iconStart="@tui.layers" appearance="destructive">
             <div tuiTitle>
-                <strong>Like</strong>
+                <strong>Services</strong>
             </div>
         </button>   
     </label>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart">
+        <button tuiButton iconStart="@tui.heart" appearance="destructive">
             <div tuiTitle>
-                <strong>Like</strong>
+                <strong>Past Projects</strong>
             </div>
         </button>   
     </label>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart">
+        <button tuiButton iconStart="@tui.heart" appearance="destructive">
             <div tuiTitle>
-                <strong>Like</strong>
+                <strong>Contact</strong>
+            </div>
+        </button>   
+    </label>
+    <label class="d-flex m-2">
+        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+            <div tuiTitle>
+                <strong>Testimonials</strong>
+            </div>
+        </button>   
+    </label>
+    <label class="d-flex m-2">
+        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+            <div tuiTitle>
+                <strong>Tech Stack</strong>
+            </div>
+        </button>   
+    </label>
+    <label class="d-flex m-2">
+        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+            <div tuiTitle>
+                <strong>About</strong>
             </div>
         </button>   
     </label>
@@ -58,6 +80,7 @@
         </div>
     </div>
     
+       
     <div 
     tuiCardLarge
     tuiSurface="flat"
@@ -116,6 +139,47 @@
             </div>
             
         </div>
+        
+        <div 
+        tuiCardLarge
+        tuiSurface="flat"
+        >
+            <div tuiHeader>
+                <h4>Addons</h4>
+            </div>
+            <p tuiTitle>
+                I also offer the following third party intergrations
+            </p>
+            <div tuiCardLarge>
+
+                <div tuiCell="l">
+                    <tui-avatar appearance="accent" src="@tui.star"/>
+                    <div tuiTitle>
+                        M-Pesa Intergration
+                    </div>
+                </div>
+                <div tuiCell="l">
+                    <tui-avatar appearance="accent" src="@tui.star"/>
+                    <div tuiTitle>
+                        Google Analytics Intergration
+                    </div>
+                </div>
+                <div tuiCell="l">
+                    <tui-avatar appearance="accent" src="@tui.star"/>
+                    <div tuiTitle>
+                        Social Media Intergration
+                    </div>
+                </div>
+                <div tuiCell="l">
+                    <tui-avatar appearance="accent" src="@tui.star"/>
+                    <div tuiTitle>
+                        Third Party API Intergration
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <h2 tuiTitle>Our Notable projects</h2>
     <app-projects></app-projects>
