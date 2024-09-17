@@ -7,11 +7,13 @@ import { FooterComponent } from '../footer/footer.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { TuiAvatar } from '@taiga-ui/kit';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-desktopui',
   standalone: true,
   imports: [
+    RouterLink,
     TuiCell,
     TuiAvatar,
     TuiNavigation,

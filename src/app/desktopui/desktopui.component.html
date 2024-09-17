@@ -9,32 +9,32 @@
 
     <br>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.layers" appearance="destructive">
+        <a tuiButton href="services" iconStart="@tui.layers" appearance="destructive">
             <div tuiTitle>
                 <strong>Services</strong>
             </div>
-        </button>   
+        </a>   
     </label>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a tuiButton href="#projects"  iconStart="@tui.heart" appearance="destructive">
             <div tuiTitle>
                 <strong>Past Projects</strong>
             </div>
-        </button>   
+        </a>   
     </label>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a href="#contact" tuiButton iconStart="@tui.heart" appearance="destructive">
             <div tuiTitle>
                 <strong>Contact</strong>
             </div>
-        </button>   
+        </a>   
     </label>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a href="#testimonials" tuiButton iconStart="@tui.heart" appearance="destructive">
             <div tuiTitle>
                 <strong>Testimonials</strong>
             </div>
-        </button>   
+        </a>   
     </label>
     <label class="d-flex m-2">
         <button tuiButton iconStart="@tui.heart" appearance="destructive">
@@ -69,9 +69,11 @@
     >
         <header tuiHeader>
             <span tuiTitle>
-                Hello, My name is Michael
+                <h3>Hello, My name is Michael</h3>
                 <div tuiSubtitle>
-                    I have all the solution to your software problems.
+                    <span>
+                        <b>I have all the solution to your software problems.</b>
+                    </span>
                     <p>I blend various technologies to bring you exceptional software solutions that will meet your business needs.</p>
                 </div>
             </span>
@@ -92,7 +94,7 @@
     tuiSurface="flat"
     style="width:fit-content;margin:auto"
     >
-        <div tuiHeader>
+        <div tuiHeader id="services">
             <h4>Services</h4>
         </div>
         <p tuiTitle>
@@ -188,9 +190,9 @@
 
 
     </div>
-    <app-projects></app-projects>
+    <app-projects id="projects"></app-projects>
     <h2 tuiTitle>Happy Clients</h2>
-    <app-testimonials></app-testimonials>
+    <app-testimonials id="testimonials"></app-testimonials>
 </main>
 <app-footer></app-footer>
 
