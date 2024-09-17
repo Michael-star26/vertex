@@ -3,11 +3,13 @@ import { Component } from '@angular/core';
 import { TuiSurface, TuiTitle } from '@taiga-ui/core';
 import { TuiCardLarge, TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
 import {TuiRepeatTimes} from '@taiga-ui/cdk'
-import {TuiFade} from '@taiga-ui/kit'
+import {TuiBadge, TuiFade} from '@taiga-ui/kit'
+
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [
+    TuiBadge,
     TuiSurface,
     TuiHeader,
     TuiCardLarge,
@@ -23,9 +25,9 @@ import {TuiFade} from '@taiga-ui/kit'
 export class ProjectsComponent {
   projects:any=[
     {
-      name:"Youtube App",
+      name:"outube App",
       Stack:"Anglar",
-      photo:"photo",
+      photo:"/favicon.ico",
       url:"url",
       desc:"desc"
     },
