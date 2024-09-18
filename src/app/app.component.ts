@@ -10,7 +10,7 @@ import { DesktopuiComponent } from './desktopui/desktopui.component';
       DesktopuiComponent,
       TuiRoot,
       TuiRoot,
-      TuiRoot
+      TuiRoot,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less',
