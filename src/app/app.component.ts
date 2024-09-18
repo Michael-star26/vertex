@@ -1,5 +1,5 @@
 import { TuiRoot } from "@taiga-ui/core";
-import { Component } from '@angular/core';
+import { Component,ChangeDetectionStrategy } from '@angular/core';
 import { DesktopuiComponent } from './desktopui/desktopui.component';
 
 
@@ -9,9 +9,12 @@ import { DesktopuiComponent } from './desktopui/desktopui.component';
   imports: [
       DesktopuiComponent,
       TuiRoot,
+      TuiRoot,
+      TuiRoot
 ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  styleUrl: './app.component.less',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
 }

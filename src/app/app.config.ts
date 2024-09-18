@@ -7,5 +7,5 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideAnimations(), provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), NG_EVENT_PLUGINS]
+  providers: [provideAnimations(), provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), NG_EVENT_PLUGINS, NG_EVENT_PLUGINS, NG_EVENT_PLUGINS]
 };

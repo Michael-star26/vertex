@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ChangeDetectionStrategy } from '@angular/core';
 import {TuiCardLarge, TuiCardMedium, TuiCell, TuiNavigation} from '@taiga-ui/layout';
 import {TuiSidebar} from '@taiga-ui/addon-mobile'
 import { TuiActiveZone } from '@taiga-ui/cdk/directives/active-zone';
@@ -35,7 +35,8 @@ import { RouterLink } from '@angular/router';
     TestimonialsComponent,
   ],
   templateUrl: './desktopui.component.html',
-  styleUrl: './desktopui.component.less'
+  styleUrl: './desktopui.component.less',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DesktopuiComponent {
   open=false

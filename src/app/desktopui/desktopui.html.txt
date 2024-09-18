@@ -191,7 +191,8 @@
 
     </div>
     <app-projects id="projects"></app-projects>
-    <app-testimonials id="testimonials"> </app-testimonials>
+    <h2 tuiTitle>Happy Clients</h2>
+    <app-testimonials id="testimonials"></app-testimonials>
 </main>
 <app-footer></app-footer>
 

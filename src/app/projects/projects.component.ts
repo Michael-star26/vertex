@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component , ChangeDetectionStrategy} from '@angular/core';
 import { TuiSurface, TuiTitle } from '@taiga-ui/core';
 import { TuiCardLarge, TuiCardMedium, TuiHeader } from '@taiga-ui/layout';
 import {TuiRepeatTimes} from '@taiga-ui/cdk'
@@ -20,7 +20,8 @@ import {TuiBadge, TuiFade} from '@taiga-ui/kit'
     TuiFade,
   ],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.less'
+  styleUrl: './projects.component.less',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjectsComponent {
   project:any=[
