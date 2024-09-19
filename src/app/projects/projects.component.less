@@ -142,13 +142,11 @@ tui-badge{
     font-weight: bolder;
 }
 
-@media screen and (min-width:600px) {   
-    div{
-        footer{
-            a:disabled{
-                cursor: not-allowed;
-                background-color: gray;
-            }
-        }
-    }
+@media screen and (max-width:600px) {   
+   a:disabled,a[disabled] {
+        background-color: grey;
+        cursor: not-allowed;
+        opacity: 0.5;
+        pointer-events: none;
+    };
   }
