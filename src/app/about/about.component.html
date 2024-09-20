@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div tuiCardLarge>
+<div tuiCardLarge class="container">
     <div tuiTitle>
         My Startups
         <h2 tuiSubtitle>
@@ -30,24 +30,25 @@
             </div>
         </h2>
     </div>
+
+    <div tuiCell="l" class="carousel">
+        <div tuiTitle>
+            <tui-carousel [itemsCount]="1" [draggable]="true" [style.width]="'25rem'">
+                <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/shop1.png');background-size: cover;background-size: cover;">
+                    <h2>Quickstore</h2>
+                </div>
+                <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/shop2.png');background-size: cover;background-size: cover;">
+                    <h2>Quickstore</h2>
+                </div>
+                <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/v1.png');background-size: cover;background-size: cover;">
+                    <h2>Vertex</h2>
+                </div>
+                <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/v2.png');background-size: cover;background-size: cover;">
+                    <h2>Vertex</h2>
+                </div>
+            </tui-carousel>
+        </div>
+    </div>
+
 </div>
 
-<div tuiCell="l" class="carousel">
-    <div tuiTitle>
-        My Startups
-        <tui-carousel [itemsCount]="1" [draggable]="true">
-            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/shop1.png');background-size: cover;background-size: cover;">
-                <h2>carousel 1</h2>
-            </div>
-            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/shop2.png');background-size: cover;background-size: cover;">
-                <h2>carousel 2</h2>
-            </div>
-            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/v1.png');background-size: cover;background-size: cover;">
-                <h2>carousel 3</h2>
-            </div>
-            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/v2.png');background-size: cover;background-size: cover;">
-                <h2>carousel 4</h2>
-            </div>
-        </tui-carousel>
-    </div>
-</div>
