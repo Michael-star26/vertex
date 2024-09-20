@@ -5,19 +5,25 @@
         <div tuiTitle [cdkCopyToClipboard]="phone">
             +254 701136880
         </div>
-        <button (click)="tel()" tuiIconButton iconStart="@tui.clipboard" appearance="destructive"></button>
+        <button (click)="tel()" tuiIconButton iconStart="@tui.clipboard" appearance="destructive" size="s"></button>
     </div>
     <div tuiCell="s" style="width:fit-content">
         <tui-avatar appearance="accent" size="s" src="@tui.mail"/>
         <div tuiTitle [tuiCopyProcessor]="processor" [cdkCopyToClipboard]="email" id="email">
             mickyonayngo1544&#64;gmail.com
         </div>
-        <button tuiIconButton iconStart="@tui.clipboard" (click)="copyToClipboard()" appearance="destructive"></button>
+        <button tuiIconButton iconStart="@tui.clipboard" (click)="copyToClipboard()" appearance="destructive" size="s"></button>
     </div>
     <div tuiCell="s">
         <tui-avatar appearance="destructive" size="s" src="/images/whatsapp.png"/>
+        <div tuiTitle>
+            Whatsapp
+        </div>
     </div>
     <div tuiCell="s">
         <tui-avatar appearance="destructive" size="s" src="/images/linkedin.png"/>
+        <div tuiTitle>
+            LinkedIn
+        </div>
     </div>
 </div>
