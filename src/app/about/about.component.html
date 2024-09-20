@@ -11,3 +11,43 @@
 
     </div>
 </div>
+
+<div tuiCardLarge>
+    <div tuiTitle>
+        My Startups
+        <h2 tuiSubtitle>
+            <div tuiCell="s">
+                <tui-avatar size="s" appearance="accent" src="/startups/v1.png"/>
+                <a tuiTitle tuiLink href="https://vertexke.netlify.app">
+                    Vertex
+                </a>
+            </div>
+            <div tuiCell="s">
+                <tui-avatar size="s" appearance="accent" src="/startups/shop1.png"/>
+                <a tuiTitle tuiLink href="https://quickstoreke.netlify.app">
+                    QuickStore
+                </a>
+            </div>
+        </h2>
+    </div>
+</div>
+
+<div tuiCell="l" class="carousel">
+    <div tuiTitle>
+        My Startups
+        <tui-carousel [itemsCount]="1" [draggable]="true">
+            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/shop1.png');background-size: cover;background-size: cover;">
+                <h2>carousel 1</h2>
+            </div>
+            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/shop2.png');background-size: cover;background-size: cover;">
+                <h2>carousel 2</h2>
+            </div>
+            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/v1.png');background-size: cover;background-size: cover;">
+                <h2>carousel 3</h2>
+            </div>
+            <div class="item" *tuiItem tuiCell="l" style="background-image:url('/startups/v2.png');background-size: cover;background-size: cover;">
+                <h2>carousel 4</h2>
+            </div>
+        </tui-carousel>
+    </div>
+</div>

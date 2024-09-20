@@ -1,6 +1,7 @@
 import { Component , ChangeDetectionStrategy} from '@angular/core';
 import { TuiLink, TuiTitle } from '@taiga-ui/core';
-import { TuiCardLarge } from '@taiga-ui/layout';
+import { TuiAvatar, TuiCarousel } from '@taiga-ui/kit';
+import { TuiCardLarge, TuiCell } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-about',
@@ -8,7 +9,10 @@ import { TuiCardLarge } from '@taiga-ui/layout';
   imports: [
     TuiCardLarge,
     TuiTitle,
-    TuiLink
+    TuiLink,
+    TuiAvatar,
+    TuiCarousel,
+    TuiCell
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.less',
