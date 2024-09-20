@@ -1,6 +1,7 @@
-import { TuiRoot } from "@taiga-ui/core";
+import { TuiRoot, TuiSurface } from "@taiga-ui/core";
 import { Component,ChangeDetectionStrategy } from '@angular/core';
 import { DesktopuiComponent } from './desktopui/desktopui.component';
+import { TuiCardLarge } from "@taiga-ui/layout";
 
 
 @Component({
@@ -11,6 +12,8 @@ import { DesktopuiComponent } from './desktopui/desktopui.component';
       TuiRoot,
       TuiRoot,
       TuiRoot,
+      TuiCardLarge,
+      TuiSurface
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less',

@@ -1,6 +1,7 @@
-<div class="p-5 m-auto">
-    <h2 tuiTitle> Contact me</h2>
+<div class="p-3 contact">
+    
 <div class="" style="width:fit-content"> 
+    <div tuiTitle> Contact me</div>
     <div tuiCell="s" [tuiCopyProcessor]="processor" style="width:fit-content">
         <tui-avatar src="@tui.phone" appearance="accent" size="s"></tui-avatar>
         <div tuiTitle [cdkCopyToClipboard]="phone" >
@@ -11,7 +12,7 @@
     <div tuiCell="s" style="width:fit-content">
         <tui-avatar appearance="accent" size="s" src="@tui.mail"/>
         <div tuiTitle [tuiCopyProcessor]="processor" [cdkCopyToClipboard]="email" id="email">
-            mickyonayngo1544&#64;gmail.com
+            mickyonyango1544&#64;gmail.com
         </div>
         <button tuiIconButton iconStart="@tui.clipboard" (click)="copyToClipboard()" appearance="destructive" size="s"></button>
     </div>

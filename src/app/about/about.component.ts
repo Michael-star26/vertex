@@ -12,5 +12,5 @@ import { TuiCardLarge } from '@taiga-ui/layout';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutComponent {
- name="mike"
+ name="Mike"
 }
