@@ -1,5 +1,5 @@
 import { Component , ChangeDetectionStrategy} from '@angular/core';
-import { TuiTitle } from '@taiga-ui/core';
+import { TuiLink, TuiTitle } from '@taiga-ui/core';
 import { TuiCardLarge } from '@taiga-ui/layout';
 
 @Component({
@@ -7,7 +7,8 @@ import { TuiCardLarge } from '@taiga-ui/layout';
   standalone: true,
   imports: [
     TuiCardLarge,
-    TuiTitle
+    TuiTitle,
+    TuiLink
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.less',
