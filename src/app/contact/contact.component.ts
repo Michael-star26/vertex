@@ -34,11 +34,11 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 export class ContactComponent {
   private readonly alerts=inject(TuiAlertService)
   email:any="mickyonyango1544@gmail.com"
-  phone="+254701136880"
+  phone:any="+254701136880"
   processor:any="copy"
   protected onCopy(event: ClipboardEvent): void {
     this.alerts.open('Copied successfully',{label:'Alert',appearance:'success'}).subscribe();
-}
+  }
 
 copy():void{
   this.alerts.open('Email '+this.email+' copied',{label:'Alert',appearance:'success'}).subscribe();
@@ -48,15 +48,31 @@ tel():void{
   this.alerts.open('Phone  '+this.phone+' copied',{label:'Alert',appearance:'success'}).subscribe();
 }
 
-myMail:any=25
+
 copyToClipboard(){
   navigator.clipboard
   .writeText(this.email.innerText)
   .then(()=>{
-    this.alerts.open('Email '+this.email+' copied',{label:'Alert',appearance:'success'}).subscribe();
+    navigator.clipboard.writeText("mickyonyango1544@gmail.com")
+    this.alerts.open('Email '+this.email+' copied',{label:'Copied',appearance:'accent'}).subscribe();
   })
   .catch((e)=>{
     this.alerts.open('Failed to copy',{label:'Alert',appearance:'warning'}).subscribe();
   })
 }
+
+copyPhone(){
+  navigator.clipboard
+  .writeText(this.phone.innerText)
+  .then(()=>{
+    navigator.clipboard.writeText("+254701136880")
+    this.alerts.open('Phone number '+this.phone+' copied',{label:'Copied',appearance:'accent'}).subscribe();
+  })
+  .catch((e)=>{
+    this.alerts.open('Failed to copy',{label:'Alert',appearance:'warning'}).subscribe();
+  })
 }
+
+
+}
+
