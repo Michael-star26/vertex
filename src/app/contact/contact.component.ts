@@ -57,7 +57,7 @@ copyToClipboard(){
     this.alerts.open('Email '+this.email+' copied',{label:'Copied',appearance:'accent'}).subscribe();
   })
   .catch((e)=>{
-    this.alerts.open('Failed to copy',{label:'Alert',appearance:'warning'}).subscribe();
+    this.alerts.open('Failed to copy'+' Copy manually',{label:'Alert',appearance:'warning'}).subscribe();
   })
 }
 
@@ -69,7 +69,7 @@ copyPhone(){
     this.alerts.open('Phone number '+this.phone+' copied',{label:'Copied',appearance:'accent'}).subscribe();
   })
   .catch((e)=>{
-    this.alerts.open('Failed to copy',{label:'Alert',appearance:'warning'}).subscribe();
+    this.alerts.open('Failed to copy'+' Copy manually',{label:'Alert',appearance:'error'}).subscribe();
   })
 }
 
