@@ -1,11 +1,13 @@
 import { Component , ChangeDetectionStrategy} from '@angular/core';
+import { TuiTitle } from '@taiga-ui/core';
 import { TuiCardLarge } from '@taiga-ui/layout';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [
-    TuiCardLarge
+    TuiCardLarge,
+    TuiTitle
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.less',
