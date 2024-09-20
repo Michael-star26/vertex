@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<h2 tuiTitle>Contact me</h2>
+<div class="d-flex"> 
+    <div tuiCell="l" [tuiCopyProcessor]="processor">
+        <tui-avatar src="@tui.phone" appearance="accent"></tui-avatar>
+        <div tuiTitle [cdkCopyToClipboard]="phone">
+            +254 701136880
+        </div>
+        <button (click)="tel()" tuiIconButton iconStart="@tui.clipboard" appearance="destructive"></button>
+    </div>
+    <div tuiCell="l">
+        <tui-avatar appearance="accent" src="@tui.mail"/>
+        <div tuiTitle [tuiCopyProcessor]="processor" [cdkCopyToClipboard]="email">
+            mickyonayngo1544&#64;gmail.com
+        </div>
+        <button tuiIconButton iconStart="@tui.clipboard" (click)="copy()" appearance="destructive"></button>
+    </div>
+    <div tuiCell="l">
+        <tui-avatar appearance="destructive" src="/images/whatsapp.png"/>
+    </div>
+    <div tuiCell="l">
+        <tui-avatar appearance="destructive" src="/images/linkedin.png"/>
+    </div>
+</div>
+

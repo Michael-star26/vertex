@@ -6,7 +6,6 @@
     iconStart="@tui.heart"
     [(open)]="open"
     >
-
     <br>
     <label class="d-flex m-2">
         <a tuiButton href="#services" iconStart="@tui.layers" appearance="destructive">
@@ -16,39 +15,39 @@
         </a>   
     </label>
     <label class="d-flex m-2">
-        <a tuiButton href="#projects"  iconStart="@tui.heart" appearance="destructive">
+        <a tuiButton href="#projects"  iconStart="@tui.list-plus" appearance="destructive">
             <div tuiTitle>
                 <strong>Past Projects</strong>
             </div>
         </a>   
     </label>
     <label class="d-flex m-2">
-        <a href="#contact" tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a href="#contact" tuiButton iconStart="@tui.phone-outgoing" appearance="destructive">
             <div tuiTitle>
                 <strong>Contact</strong>
             </div>
         </a>   
     </label>
     <label class="d-flex m-2">
-        <a href="#testimonials" tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a href="#testimonials" tuiButton iconStart="@tui.laugh" appearance="destructive">
             <div tuiTitle>
                 <strong>Testimonials</strong>
             </div>
         </a>   
     </label>
     <label class="d-flex m-2">
-        <a href="#stack" tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a href="#stack" tuiButton iconStart="@tui.code" appearance="destructive">
             <div tuiTitle>
                 <strong>Tech Stack</strong>
             </div>
         </a>   
     </label>
     <label class="d-flex m-2">
-        <button tuiButton iconStart="@tui.heart" appearance="destructive">
+        <a href="#about" tuiButton iconStart="@tui.user-round" appearance="destructive">
             <div tuiTitle>
                 <strong>About</strong>
             </div>
-        </button>   
+        </a>   
     </label>
     </button>
     <span tuiNavigationLogo>
@@ -192,7 +191,10 @@
     </div>
     <app-projects id="projects"></app-projects>
     <app-testimonials id="testimonials"> </app-testimonials>
-    <app-stack id=""></app-stack>
+    <app-stack id="stack"></app-stack>
+    <app-contact id="contact"></app-contact>
+    <app-about id="about"></app-about>
+
 </main>
 <app-footer></app-footer>
 

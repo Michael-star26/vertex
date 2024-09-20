@@ -9,6 +9,8 @@ import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { TuiAvatar } from '@taiga-ui/kit';
 import { RouterLink } from '@angular/router';
 import { StackComponent } from '../stack/stack.component';
+import { AboutComponent } from '../about/about.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-desktopui',
@@ -34,7 +36,9 @@ import { StackComponent } from '../stack/stack.component';
     TuiScrollable,
     ProjectsComponent,
     TestimonialsComponent,
-    StackComponent
+    StackComponent,
+    AboutComponent,
+    ContactComponent
   ],
   templateUrl: './desktopui.component.html',
   styleUrl: './desktopui.component.less',
