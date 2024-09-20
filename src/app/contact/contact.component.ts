@@ -33,7 +33,7 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 })
 export class ContactComponent {
   private readonly alerts=inject(TuiAlertService)
-  email="mickyonyango1544@gmail.com"
+  email:any="mickyonyango1544@gmail.com"
   phone="+254701136880"
   processor:any="copy"
   protected onCopy(event: ClipboardEvent): void {
@@ -46,5 +46,17 @@ copy():void{
 
 tel():void{
   this.alerts.open('Phone  '+this.phone+' copied',{label:'Alert',appearance:'success'}).subscribe();
+}
+
+myMail:any=25
+copyToClipboard(){
+  navigator.clipboard
+  .writeText(this.email.innerText)
+  .then(()=>{
+    this.alerts.open('Email '+this.email+' copied',{label:'Alert',appearance:'success'}).subscribe();
+  })
+  .catch((e)=>{
+    this.alerts.open('Failed to copy',{label:'Alert',appearance:'warning'}).subscribe();
+  })
 }
 }
