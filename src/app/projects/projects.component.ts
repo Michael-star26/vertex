@@ -78,19 +78,19 @@ export class ProjectsComponent {
   }
 
   vertex():void{
-    this.alerts.open('This is my tech startup company',{label:'success',appearance:'Notification'}).subscribe();
+    this.alerts.open('This is my tech startup company',{label:'Hint',appearance:'success'}).subscribe();
   }
 
   todo():void{
-    this.alerts.open('This is a simple todo app. Note that any inputs will be stored dynamically. Therefore if you refresh the website, the data will be lost',{label:'warning',appearance:'Notification'}).subscribe();
+    this.alerts.open('This is a simple todo app. Note that any inputs will be stored dynamically. Therefore if you refresh the website, the data will be lost',{label:'Hint',appearance:'warning'}).subscribe();
   }
 
   utube():void{
-    this.alerts.open('This is a simple youtube search app. The maximum search results are set to 50. If you exeed the quota limit provided by YouTube, you may get a 500 error message',{label:'warning',appearance:'Notification'}).subscribe();
+    this.alerts.open('This is a simple youtube search app. The maximum search results are set to 50. If you exeed the quota limit provided by YouTube, you may get a 500 error message',{label:'Hint',appearance:'warning'}).subscribe();
   }
 
   social():void{
-    this.alerts.open('This is a simple reddit-like app. This is because it uses the concept of upvoting and downvoting.The posts are then sorted according to the number of votes',{label:'success',appearance:'Notification'}).subscribe();
+    this.alerts.open('This is a simple reddit-like app. This is because it uses the concept of upvoting and downvoting.The posts are then sorted according to the number of votes',{label:'🎉🎉🎉🎉',appearance:'success'}).subscribe();
   }
 
   }
