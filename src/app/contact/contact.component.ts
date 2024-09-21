@@ -54,7 +54,7 @@ copyToClipboard(){
   .writeText(this.email.innerText)
   .then(()=>{
     navigator.clipboard.writeText("mickyonyango1544@gmail.com")
-    this.alerts.open('Email '+this.email+' copied',{label:'Copied',appearance:'accent'}).subscribe();
+    this.alerts.open('Email '+this.email+' copied',{label:'Copied',appearance:'accent',icon:'@tui.check-check'}).subscribe();
   })
   .catch((e)=>{
     this.alerts.open('Failed to copy'+' Copy manually',{label:'Alert',appearance:'warning'}).subscribe();
@@ -66,7 +66,7 @@ copyPhone(){
   .writeText(this.phone.innerText)
   .then(()=>{
     navigator.clipboard.writeText("+254701136880")
-    this.alerts.open('Phone number '+this.phone+' copied',{label:'Copied',appearance:'accent'}).subscribe();
+    this.alerts.open('Phone number '+this.phone+' copied',{label:'Copied',appearance:'accent',icon:'@tui.check-check'}).subscribe();
   })
   .catch((e)=>{
     this.alerts.open('Failed to copy'+' Copy manually',{label:'Alert',appearance:'error'}).subscribe();
