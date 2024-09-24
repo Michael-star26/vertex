@@ -20,4 +20,5 @@ import { TuiCardLarge } from "@taiga-ui/layout";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
+  title="vertex"
 }

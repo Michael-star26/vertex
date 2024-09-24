@@ -38,7 +38,7 @@ import { ContactComponent } from '../contact/contact.component';
     TestimonialsComponent,
     StackComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
   ],
   templateUrl: './desktopui.component.html',
   styleUrl: './desktopui.component.less',
