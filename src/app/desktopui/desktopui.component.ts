@@ -11,7 +11,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { StackComponent } from '../stack/stack.component';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
-
+import { ServiceslistComponent } from '../serviceslist/serviceslist.component';
 @Component({
   selector: 'app-desktopui',
   standalone: true,
@@ -39,7 +39,9 @@ import { ContactComponent } from '../contact/contact.component';
     StackComponent,
     AboutComponent,
     ContactComponent,
-    RouterOutlet
+    RouterOutlet,
+    ServiceslistComponent
+
   ],
   templateUrl: './desktopui.component.html',
   styleUrl: './desktopui.component.less',

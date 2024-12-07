@@ -71,38 +71,92 @@
 
 </header>
 <main tuiNavigationMain>
-    <br>
-    <div 
-    tuiCardLarge
-    tuiSurface="flat"
-    tuiHeader
-    class="m-auto intro"
-    >
-        <div class="m-auto d-flex" tuiCardLarge>
-            <tui-avatar appearance="accent" src="/images/avatar.jpg"/>
-        </div>
+    <div class="header">
+        <div class="header-card">
+            <div class="img-bx">
+              <img src="/images/avatar.jpg" alt="img" width=""  />
+            </div>
+            <div class="content">
+              <div class="detail">
+                <h2>Michael Owino<br /><span>Fullstack Developer</span></h2>
+                <ul class="sci">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- services -->
+    <div class="container row">
         <header tuiHeader>
-            <span tuiTitle>
-                <h3>Hello, My name is Michael</h3>
-                <div tuiSubtitle>
-                    <span>
-                        <b>I am a full stack software developer</b>
-                    </span>
-                    <p>I blend various technologies to bring you exceptional software solutions that will meet your business needs.</p>
-                </div>
-            </span>
+            <h5>Services</h5>
         </header>
-        <div tuiCell="l">
-            <div tuiTitle>
-                I am commited to creating solutions that lead to success as your loyal partner
+        <div class="service-card col-md-4 col-12 m-auto">
+            <div class="face face1">
+                <div class="content">
+                    <tui-avatar src="/images/avatar.jpg" height="100%" size="xxl" class="m-auto"/>
+                    <h3 class="m-auto">Web development</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="service-card col-md-4 col-12 m-auto">
+            <div class="face face1">
+                <div class="content">
+                    <tui-avatar src="/images/avatar.jpg" height="100%" size="xxl" class="m-auto"/>
+                    <h3 class="m-auto">Data Analysis</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="service-card col-md-4 col-12 m-auto">
+            <div class="face face1">
+                <div class="content">
+                    <tui-avatar src="/images/avatar.jpg" height="100%" size="xxl" class="m-auto"/>
+                    <h3 class="m-auto">IT Consultancy</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
             </div>
         </div>
     </div>
-    
-       <br>
-       
+    <!--  -->
+    <!--  -->
+    <!-- services list-->
+    <app-serviceslist></app-serviceslist>
+    <!-- -->
+    <!--  -->
+    <!--  -->
     <div 
-    tuiCardLarge
+    card
     tuiSurface="flat"
     class="desc"
     >
@@ -115,7 +169,7 @@
                 I develop softwares from scratch or may use a cms depending on my client's needs.
             </span>
         </p>
-        <div tuiCardLarge>
+        <div card>
             <h6 tuiTitle>Here are some of the common websites that I make</h6>
             <div tuiCell="l">
                 <tui-avatar appearance="accent" src="@tui.star"/>
@@ -162,7 +216,7 @@
         </div>
         
         <div 
-        tuiCardLarge
+        card
         tuiSurface="flat"
         >
             <div tuiHeader>
@@ -171,7 +225,7 @@
             <p tuiTitle>
                 I also offer the following third party intergrations
             </p>
-            <div tuiCardLarge>
+            <div card>
 
                 <div tuiCell="l">
                     <tui-avatar appearance="accent" src="@tui.star"/>
